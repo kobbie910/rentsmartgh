@@ -18,14 +18,6 @@ class _HomeScreenState extends State<HomeScreen> {
       body: const Center(
         child: Text('Home screen content goes here'),
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: AppColors.primaryGreen,
-        onPressed: () {
-
-        },
-        child: const Icon(Icons.add, color: Colors.white),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: AppBottomNav(
         currentIndex: _currentIndex,
         onTabSelected: (index) {
@@ -34,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
           });
         },
         onPostProperty: () {
-
+          // navigate to Post Property screen
         },
       ),
     );
